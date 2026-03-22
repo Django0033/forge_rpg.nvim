@@ -6,12 +6,12 @@ Random Tables Generator for [FORGE RPG](https://zap-forge.itch.io/forge) - Anniv
 
 ### Using packer.nvim
 ```lua
-use 'your-repo/forge-nvim'
+use 'Django0033/forge-nvim'
 ```
 
 ### Using vim-plug
 ```vim
-Plug 'your-repo/forge-nvim'
+Plug 'Django0033/forge-nvim'
 ```
 
 ## Setup
