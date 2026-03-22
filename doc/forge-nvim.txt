@@ -1,0 +1,96 @@
+*forge-nvim.txt*             FORGE RPG Random Tables Generator for Neovim
+
+Author: FORGE RPG by Oliver Fradgley
+License: CC BY 4.0
+
+==============================================================================
+INTRODUCTION                                    *forge-nvim*
+
+FORGE RPG Random Tables Generator provides quick access to all random tables
+from the FORGE Anniversary Edition RPG system, designed for solo play and
+game mastering.
+
+==============================================================================
+COMMANDS                                        *forge-nvim-commands*
+
+:ForgeRoll <dice>                               *:ForgeRoll*
+        Roll dice notation (e.g., d20, 3d6, 2d8+2, d66)
+
+:ForgeName [race]                               *:ForgeName*
+        Generate a random name. Optional race: human, elf, dwarf,
+        halfling, gnome, goblin, orc, troll
+
+:ForgeNPC                                       *:ForgeNPC*
+        Generate a complete random NPC with personality, occupation,
+        appearance, and motivation
+
+:ForgeCharacter                                 *:ForgeCharacter*
+        Generate a complete random player character with attributes,
+        level 1 stats, equipment, and personality
+
+:ForgeCreature                                  *:ForgeCreature*
+        Generate a random creature with stats, abilities, and behavior
+
+:ForgeEncounter [location]                      *:ForgeEncounter*
+        Generate a random encounter. Optional location modifier:
+        urban, wilderness, dungeon, rural
+
+:ForgeTreasure [level]                          *:ForgeTreasure*
+        Generate treasure based on dungeon level (1-10)
+
+:ForgeSettlement                                *:ForgeSettlement*
+        Generate a random settlement with name, government, population,
+        industry, and secrets
+
+:ForgeTavern                                    *:ForgeTavern*
+        Generate a random tavern/inn name
+
+:ForgeGear                                      *:ForgeGear*
+        Generate 5 pieces of adventuring gear
+
+:ForgeWeapon                                    *:ForgeWeapon*
+        Generate a random weapon with damage and cost
+
+:ForgeScars                                     *:ForgeScars*
+        Generate a random permanent scar from the Scars table
+
+:ForgeHelp                                      *:ForgeHelp*
+        Show this help message
+
+==============================================================================
+KEYBINDINGS                                      *forge-nvim-keys*
+
+When a floating window is open:
+
+q               Close the window
+r               Re-roll / regenerate content
+i or <CR>       Insert content as Markdown into the current buffer
+
+==============================================================================
+CONFIGURATION                                    *forge-nvim-config*
+
+No configuration is required. Default setup:
+>
+        lua require('forge-nvim').setup()
+<
+
+==============================================================================
+DICE NOTATION                                   *forge-nvim-dice*
+
+Supported notations:
+        d4, d6, d8, d10, d12, d20, d66
+        Multiple dice: 2d6, 3d8, 4d4
+        Modifiers: d20+5, 2d6-2, 3d8+3
+        Special: d66 (two d6 combined: 11-66)
+
+==============================================================================
+CREDITS                                          *forge-nvim-credits*
+
+FORGE RPG created by Oliver Fradgley
+Based on OSR and B/X D&D compatible rules
+Licensed under CC BY 4.0
+
+Plugin inspired by FORGE Anniversary Edition
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
