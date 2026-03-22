@@ -39,3 +39,12 @@ luac.out
 *.x86_64
 *.hex
 
+# PDF source (FORGE Anniversary Edition book)
+forge-aniversary-edition.pdf
+
+# Development log
+DEVLOG.md
+
+# Test files
+test_forge.md
+
